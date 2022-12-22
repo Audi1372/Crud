@@ -10,11 +10,11 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      
+      <BrowserRouter>
       <Navigation />
       <div className='back'>
       <marquee><h1>Welcome to Crud operations</h1></marquee>
-      <BrowserRouter>
+      
         <Routes>
           <Route path='/products' element={<Products/>} />
           <Route path='/action' element={<Action />} />
@@ -22,9 +22,9 @@ function App() {
           <Route path='/action/:id/false' element={<Action />} />
           <Route path='/about' element={<About />} />
        </Routes>
-        </BrowserRouter>
+        
         </div>
-
+      </BrowserRouter>
     </div>
   );
 }
