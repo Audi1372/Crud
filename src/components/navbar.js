@@ -14,7 +14,7 @@ function Navigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            Nav.Link  onClick={()=>navigate('./products')}>Products</Nav.Link>
+            <Nav.Link  onClick={()=>navigate('/products')}>Products</Nav.Link>
             <Nav.Link  onClick={()=>navigate('/action')}>Add-product</Nav.Link>
             <Nav.Link  onClick={()=>navigate('/about')}>More-details</Nav.Link>
             
